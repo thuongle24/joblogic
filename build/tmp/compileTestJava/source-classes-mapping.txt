@@ -1,0 +1,20 @@
+automation/jlweb/ui/SearchBox.java
+ automation.jlweb.ui.SearchBox
+automation/jlweb/features/search/package-info.java
+ automation.jlweb.features.search.package-info
+automation/jlweb/tasks/Search.java
+ automation.jlweb.tasks.Search
+automation/jlweb/ui/GoogleSearchPage.java
+ automation.jlweb.ui.GoogleSearchPage
+automation/jlweb/ui/HomePage.java
+ automation.jlweb.ui.HomePage
+automation/jlweb/tasks/OpenTheApplication.java
+ automation.jlweb.tasks.OpenTheApplication
+automation/jlweb/features/search/SearchByKeywordStory.java
+ automation.jlweb.features.search.SearchByKeywordStory
+automation/jlweb/ui/LoginPage.java
+ automation.jlweb.ui.LoginPage
+automation/jlweb/tasks/Login.java
+ automation.jlweb.tasks.Login
+automation/jlweb/features/search/LoginWithValidCredentials.java
+ automation.jlweb.features.search.LoginWithValidCredentials

@@ -1,0 +1,10 @@
+automation/jlweb/ui/SearchBox.class
+automation/jlweb/ui/LoginPage.class
+automation/jlweb/ui/GoogleSearchPage.class
+automation/jlweb/features/search/SearchByKeywordStory.class
+automation/jlweb/tasks/OpenTheApplication.class
+automation/jlweb/tasks/Search.class
+automation/jlweb/tasks/Login.class
+automation/jlweb/features/search/LoginWithValidCrendentials.class
+automation/jlweb/ui/HomePage.class
+automation/jlweb/features/search/package-info.class

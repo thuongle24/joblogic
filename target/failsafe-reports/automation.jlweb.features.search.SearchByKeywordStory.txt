@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: automation.jlweb.features.search.SearchByKeywordStory
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 20.297 s <<< FAILURE! - in automation.jlweb.features.search.SearchByKeywordStory
+search_results_should_show_the_search_term_in_the_title(automation.jlweb.features.search.SearchByKeywordStory)  Time elapsed: 18.022 s  <<< ERROR!
+net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException: 
+Expected enabled element was not enabled
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Les-MacBook-Pro.local', ip: 'fe80:0:0:0:18c7:80f0:47c2:c334%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.4', java.version: '1.8.0_251'
+Driver info: driver.version: unknown
+	at automation.jlweb.features.search.SearchByKeywordStory.search_results_should_show_the_search_term_in_the_title(SearchByKeywordStory.java:43)
+
