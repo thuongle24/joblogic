@@ -8,13 +8,31 @@ automation/jlweb/ui/GoogleSearchPage.java
  automation.jlweb.ui.GoogleSearchPage
 automation/jlweb/ui/HomePage.java
  automation.jlweb.ui.HomePage
+automation/jlweb/ui/LoginPage.java
+ automation.jlweb.ui.LoginPage
+automation/jlweb/model/Category.java
+ automation.jlweb.model.Category
+automation/jlweb/model/SubCategory.java
+ automation.jlweb.model.SubCategory
 automation/jlweb/tasks/OpenTheApplication.java
  automation.jlweb.tasks.OpenTheApplication
 automation/jlweb/features/search/SearchByKeywordStory.java
  automation.jlweb.features.search.SearchByKeywordStory
-automation/jlweb/ui/LoginPage.java
- automation.jlweb.ui.LoginPage
-automation/jlweb/tasks/Login.java
- automation.jlweb.tasks.Login
+automation/jlweb/ui/NavigationBar.java
+ automation.jlweb.ui.NavigationBar
+automation/jlweb/tasks/NavigateToSubCategory.java
+ automation.jlweb.tasks.NavigateToSubCategory
+automation/jlweb/ui/AddCustomerPage.java
+ automation.jlweb.ui.AddCustomerPage
+automation/jlweb/tasks/NavigateToCategory.java
+ automation.jlweb.tasks.NavigateToCategory
 automation/jlweb/features/search/LoginWithValidCredentials.java
  automation.jlweb.features.search.LoginWithValidCredentials
+automation/jlweb/tasks/EnterCustomerInfo.java
+ automation.jlweb.tasks.EnterCustomerInfo
+automation/jlweb/tasks/AddTags.java
+ automation.jlweb.tasks.AddTags
+automation/jlweb/tasks/LoginJLWeb.java
+ automation.jlweb.tasks.LoginJLWeb
+automation/jlweb/features/customers/CreateCustomer.java
+ automation.jlweb.features.customers.CreateCustomer

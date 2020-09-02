@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="automation.jlweb.features.customers.CreateCustomer" skipped="0" tests="1" time="26.92" timestamp="2020-09-02 11:31:49"><testcase classname="automation.jlweb.features.customers.CreateCustomer" name="Create customer with no contact from customer page"/></testsuite>
