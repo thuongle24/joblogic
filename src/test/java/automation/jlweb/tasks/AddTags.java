@@ -1,16 +1,18 @@
 package automation.jlweb.tasks;
 
 import net.bytebuddy.implementation.bytecode.Throw;
+import net.serenitybdd.junit.runners.SerenityRunner;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Performable;
 import net.serenitybdd.screenplay.Task;
-import net.serenitybdd.screenplay.actions.Click;
-import net.serenitybdd.screenplay.actions.Enter;
-import net.serenitybdd.screenplay.actions.EnterValue;
-import net.serenitybdd.screenplay.actions.Hit;
+import net.serenitybdd.screenplay.actions.*;
 import net.serenitybdd.screenplay.targets.Target;
+import net.serenitybdd.screenplay.waits.Wait;
 import net.thucydides.core.annotations.Step;
+import org.junit.runner.RunWith;
 import org.openqa.selenium.Keys;
+
+import java.util.concurrent.Delayed;
 
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 import static org.openqa.selenium.Keys.*;
@@ -38,6 +40,10 @@ public class AddTags implements Task {
                 else {
                     actor.attemptsTo(Hit.the(Keys.ENTER).into(tagBoxTarget));
                 }
+                actor.attemptsTo(Hit.the(Keys.TAB).into(tagBoxTarget));
+
+                //**** this code line is to send a sequence of keys at the same time
+                //actor.attemptsTo(Enter.keyValues(Keys.chord(Keys.CONTROL,"a")).into(tagBoxTarget));
             }
         }
         else

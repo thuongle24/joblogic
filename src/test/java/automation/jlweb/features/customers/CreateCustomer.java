@@ -25,7 +25,7 @@ public class CreateCustomer {
 
     Actor anna = Actor.named("Anna");
     SubCategory subCategory;
-    String[] tagValues= {"Tag1","edit tag"};
+    String[] tagValues= {anna.getName()};
 
     @Managed(driver = "chrome",options = "--whitelisted-ips")
     public WebDriver herBrowser;
@@ -47,5 +47,6 @@ public class CreateCustomer {
         anna.attemptsTo(WaitUntil.the(NavigationBar.subCategory(SubCategory.ADDCUSTOMER.getName()),isVisible()));
         and(anna).attemptsTo(NavigateToSubCategory.with(SubCategory.ADDCUSTOMER.getName()));
         and(anna).attemptsTo(AddTags.with(tagValues, AddCustomerPage.CUSTOMERTAGTXT,AddCustomerPage.ADDTAGBTN));
+
     }
 }

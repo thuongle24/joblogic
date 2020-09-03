@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="automation.jlweb.features.customers.CreateCustomer" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-09-02T16:31:48" hostname="Les-MacBook-Pro.local" time="26.939">
+<testsuite name="automation.jlweb.features.customers.CreateCustomer" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-09-03T15:38:29" hostname="Les-MacBook-Pro.local" time="37.408">
   <properties/>
-  <testcase name="create_customer_with_no_contact_from_customer_page" classname="automation.jlweb.features.customers.CreateCustomer" time="26.939"/>
+  <testcase name="create_customer_with_no_contact_from_customer_page" classname="automation.jlweb.features.customers.CreateCustomer" time="37.408"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-Sep 02, 2020 11:31:49 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+Sep 03, 2020 10:38:29 PM org.openqa.selenium.remote.DesiredCapabilities chrome
 INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
-Starting ChromeDriver 85.0.4183.87 (cd6713ebf92fa1cacc0f1a598df280093af0c5d7-refs/branch-heads/4183@{#1689}) on port 17527
+Starting ChromeDriver 85.0.4183.87 (cd6713ebf92fa1cacc0f1a598df280093af0c5d7-refs/branch-heads/4183@{#1689}) on port 37362
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Sep 02, 2020 11:31:52 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Sep 03, 2020 10:38:32 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
 </testsuite>

@@ -27,5 +27,6 @@ public class AddCustomerPage extends PageObject {
     public static final Target ADDCUSTOMERTYPEBTN= Target.the("Add Customer Type button").located(By.xpath("//button[contains(@onclick,'CustomerTypeId')]"));
     public static final Target ADDSELLINGRATEBTN= Target.the("Add Selling Rate button").located(By.xpath("//button[contains(@onclick,'SellingRateId')]"));
     public static final Target CUSTOMERTAGTXT = Target.the("Customer Tag(s) textbox").located(By.xpath("//input[contains(@aria-describedby,'Customer_TagIds_taglist')]"));
-    public static final Target ADDTAGBTN = Target.the("Add Tag(s) button").located(By.xpath("//ul[@id='Customer_TagIds_taglist']/ancestor::div/span[@role='button']"));
+    public static final Target ADDTAGBTN = Target.the("Add Tag(s) button").located(By.xpath("//div[@id='Customer_TagIds-list']//button[contains(@onclick,'addTags')]"));
+    public static final Target test= Target.the("Country menu item").located(By.xpath("//input[@id='Telephone']/preceding-sibling::div//span[text()='United States']"));
 }
