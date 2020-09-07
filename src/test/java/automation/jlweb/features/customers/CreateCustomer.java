@@ -2,6 +2,7 @@ package automation.jlweb.features.customers;
 
 import automation.jlweb.model.Category;
 import automation.jlweb.model.SubCategory;
+import automation.jlweb.model.TelephoneType;
 import automation.jlweb.tasks.*;
 import automation.jlweb.ui.AddCustomerPage;
 import automation.jlweb.ui.NavigationBar;
@@ -25,7 +26,7 @@ public class CreateCustomer {
 
     Actor anna = Actor.named("Anna");
     SubCategory subCategory;
-    String[] tagValues= {anna.getName()};
+    String[] tagValues= {"edit tag"};
 
     @Managed(driver = "chrome",options = "--whitelisted-ips")
     public WebDriver herBrowser;
@@ -45,8 +46,32 @@ public class CreateCustomer {
         when(anna).attemptsTo(LoginJLWeb.withTheCredentials("thuongl@joblogic.com","1"));
         and(anna).attemptsTo(NavigateToCategory.with(Category.Customers));
         anna.attemptsTo(WaitUntil.the(NavigationBar.subCategory(SubCategory.ADDCUSTOMER.getName()),isVisible()));
-        and(anna).attemptsTo(NavigateToSubCategory.with(SubCategory.ADDCUSTOMER.getName()));
-        and(anna).attemptsTo(AddTags.with(tagValues, AddCustomerPage.CUSTOMERTAGTXT,AddCustomerPage.ADDTAGBTN));
+        and(anna).attemptsTo(
+                            NavigateToSubCategory.with(SubCategory.ADDCUSTOMER.getName()),
 
+                            AddTags.with(tagValues, AddCustomerPage.CUSTOMERTAGTXT,AddCustomerPage.ADDTAGBTN),
+
+                            EnterCustomerInfo.with("Khuong Truong",
+                                                    "1A Nguyen Thien Thuat",
+                                                    "District 3",
+                                                    "Ho Chi Minh",
+                                                    "Vietnam",
+                                                    "80000",
+                                                    "United Kingdom",
+                                                    "447476549827",
+                                                    "Commercial",
+                                                    "2324",
+                                                    "All Chargeable Works"),
+
+                            EnterContactInfo.with( "Adam",
+                                                    "Lavin",
+                                                    "United Kingdom",
+                                                    "447476549828",
+                                                    "adam@gmail.com",
+                                                    "CEO"),
+
+                            SelectButton.of(AddCustomerPage.CANCELBTN)
+
+                            );
     }
 }

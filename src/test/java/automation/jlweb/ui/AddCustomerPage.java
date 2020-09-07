@@ -28,5 +28,11 @@ public class AddCustomerPage extends PageObject {
     public static final Target ADDSELLINGRATEBTN= Target.the("Add Selling Rate button").located(By.xpath("//button[contains(@onclick,'SellingRateId')]"));
     public static final Target CUSTOMERTAGTXT = Target.the("Customer Tag(s) textbox").located(By.xpath("//input[contains(@aria-describedby,'Customer_TagIds_taglist')]"));
     public static final Target ADDTAGBTN = Target.the("Add Tag(s) button").located(By.xpath("//div[@id='Customer_TagIds-list']//button[contains(@onclick,'addTags')]"));
-    public static final Target test= Target.the("Country menu item").located(By.xpath("//input[@id='Telephone']/preceding-sibling::div//span[text()='United States']"));
+
+    public static final Target CONTACTFIRSTNAME= Target.the("Contact first name textbox").locatedBy("#ContactFirstName");
+    public static final Target CONTACTLASTNAME= Target.the("Contact last name textbox").locatedBy("#ContactLastName");
+    public static final Target CONTACTEMAIL= Target.the("Contact email textbox").locatedBy("#ContactEmail");
+    public static final Target CONTACTTELEPHONETXT = Target.the("Contact Telephone textbox" ).locatedBy("#ContactTelephone");
+    public static final Target CONTACTTELEPHONECOUNTRYBTN = Target.the("Contact Telephone Country button").located(By.xpath("//input[@id='ContactTelephone']/preceding-sibling::div"));
+    public static final Target CONTACTPOSITIONTXT = Target.the("Contact position textbox" ).locatedBy("#ContactPosition");
 }

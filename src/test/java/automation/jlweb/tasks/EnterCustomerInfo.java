@@ -1,12 +1,13 @@
 package automation.jlweb.tasks;
 
-import automation.jlweb.model.Category;
-import automation.jlweb.ui.NavigationBar;
+import automation.jlweb.model.TelephoneType;
+import automation.jlweb.ui.AddCustomerPage;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Performable;
 import net.serenitybdd.screenplay.Task;
-import net.serenitybdd.screenplay.actions.Click;
+import net.serenitybdd.screenplay.actions.Enter;
 import net.thucydides.core.annotations.Step;
+import org.openqa.selenium.Keys;
 
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 
@@ -41,11 +42,36 @@ public class EnterCustomerInfo implements Task {
     }
 
 
-    @Step("{0} navigates to the #category category")
+    @Step("{0} enters customer info")
     public <T extends Actor> void performAs(T actor) {
-    }
-    public static Performable theCategory(Category category) {
+        if (customerName!= null)
+            actor.attemptsTo(Enter.keyValues(customerName).into(AddCustomerPage.CUSTOMERNAMETXT));
+        if (address1!=null)
+            actor.attemptsTo(Enter.keyValues(address1).into(AddCustomerPage.ADDRESS1TXT));
+        if(address2!=null)
+            actor.attemptsTo(Enter.keyValues(address2).into(AddCustomerPage.ADDRESS2TXT));
+        if(address3!=null)
+            actor.attemptsTo(Enter.keyValues(address3).into(AddCustomerPage.ADDRESS3TXT));
+        if(address4!=null)
+            actor.attemptsTo(Enter.keyValues(address4).into(AddCustomerPage.ADDRESS4TXT));
+        if (postCode!=null)
+            actor.attemptsTo(Enter.keyValues(postCode).into(AddCustomerPage.ZIPCODETXT));
+        if (telephoneNumber!=null)
+            actor.attemptsTo(EnterPhoneNumber.with(telephoneNumber,AddCustomerPage.TELEPHONETXT,AddCustomerPage.CUSTOMERTELEPHONECOUNTRYBTN, telephoneCountry, TelephoneType.TELEPHONE));
+        if (customerType!=null)
+            actor.attemptsTo(Enter.keyValues(customerType).into(AddCustomerPage.CUSTOMERTYPETXT).thenHit(Keys.TAB));
+        if(referenceNumber!=null)
+            actor.attemptsTo(Enter.keyValues(referenceNumber).into(AddCustomerPage.REFERENCENUMBERTXT));
+        if(sellingRate!=null)
+            actor.attemptsTo(Enter.keyValues(sellingRate).into(AddCustomerPage.SELLINGRATETXT).thenHit(Keys.TAB));
 
-        return instrumented(EnterCustomerInfo.class, category);
+    }
+
+    public static Performable with(String customerName, String address1, String address2, String address3, String address4,
+                                          String postCode, String telephoneCountry, String telephoneNumber, String customerType,
+                                          String referenceNumber, String sellingRate) {
+
+        return instrumented(EnterCustomerInfo.class,customerName,address1,address2,address3,address4,postCode, telephoneCountry,
+                telephoneNumber,customerType,referenceNumber,sellingRate);
     }
 }

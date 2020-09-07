@@ -27,7 +27,7 @@ public class AddTags implements Task {
         this.addTagTarget = addTagTarget;
     }
 
-    @Step("{0} tries to add Tag(s) into #tagBoxTarget.getName()")
+    @Step("{0} tries to add Tag(s) into #tagBoxTarget")
     public <T extends Actor> void performAs(T actor) {
         int length= tagValues.length;
         if(length>0)
