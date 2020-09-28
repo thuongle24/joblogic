@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="0" name="automation.jlweb.features.customers.CreateCustomer" skipped="0" tests="1" time="19.04" timestamp="2020-09-28 10:30:02"><testcase classname="automation.jlweb.features.customers.CreateCustomer" name="Create customer with no contact from customer page"><error type="java.lang.NullPointerException"/><system-err>null
+automation.jlweb.actions.WaitAndClick.forElement(WaitAndClick.java:39)
+automation.jlweb.actions.NavigateToPage.performAs(NavigateToPage.java:33)
+automation.jlweb.features.customers.CreateCustomer.create_customer_with_no_contact_from_customer_page(CreateCustomer.java:43)
+</system-err></testcase></testsuite>

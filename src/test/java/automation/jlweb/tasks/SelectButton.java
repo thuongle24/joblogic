@@ -14,11 +14,11 @@ public class SelectButton implements Task {
 
     private final Target button;
 
-    protected SelectButton(Target button) {
+    public SelectButton(Target button) {
         this.button = button;
     }
 
-    @Step("{O} clicks on #selectedButton")
+    @Step("{0} clicks on #button")
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(Click.on(button));
     }

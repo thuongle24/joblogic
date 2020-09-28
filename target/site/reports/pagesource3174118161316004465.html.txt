@@ -1,0 +1,1024 @@
+<html class="k-webkit k-webkit85 md-theme-default"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="robots" content="noindex">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <title>Dashboard - JobLogic</title>
+        <script type="text/javascript" async="" src="//www.googleadservices.com/pagead/conversion_async.js"></script><script async="" src="https://inlinemanual.com/embed/player.9a2436813ae65f80c888da3ea845e853.js" charset="UTF-8"></script><script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-WR9ZV3D"></script><script async="" src="//loader.wisepops.com/get-loader.js?v=1&amp;site=zdAqAc9Jkx"></script><script async="" src="https://www.google-analytics.com/analytics.js"></script><script src="https://connect.facebook.net/signals/config/429723161127353?v=2.9.24&amp;r=stable" async=""></script><script src="https://connect.facebook.net/signals/config/1204068316469744?v=2.9.24&amp;r=stable" async=""></script><script async="" src="https://connect.facebook.net/en_US/fbevents.js"></script><script type="text/javascript">
+        var sdkInstance="appInsightsSDK";window[sdkInstance]="appInsights";var aiName=window[sdkInstance],aisdk=window[aiName]||function(e){
+        function n(e){t[e]=function(){var n=arguments;t.queue.push(function(){t[e].apply(t,n)})}}var t={config:e};t.initialize=!0;var i=document,a=window;setTimeout(function(){var n=i.createElement("script");n.src=e.url||"https://az416426.vo.msecnd.net/next/ai.2.min.js",i.getElementsByTagName("script")[0].parentNode.appendChild(n)});try{t.cookie=i.cookie}catch(e){}t.queue=[],t.version=2;for(var r=["Event","PageView","Exception","Trace","DependencyData","Metric","PageViewPerformance"];r.length;)n("track"+r.pop());n("startTrackPage"),n("stopTrackPage");var s="Track"+r[0];if(n("start"+s),n("stop"+s),n("setAuthenticatedUserContext"),n("clearAuthenticatedUserContext"),n("flush"),!(!0===e.disableExceptionTracking||e.extensionConfig&&e.extensionConfig.ApplicationInsightsAnalytics&&!0===e.extensionConfig.ApplicationInsightsAnalytics.disableExceptionTracking)){n("_"+(r="onerror"));var o=a[r];a[r]=function(e,n,i,a,s){var c=o&&o(e,n,i,a,s);return!0!==c&&t["_"+r]({message:e,url:n,lineNumber:i,columnNumber:a,error:s}),c},e.autoExceptionInstrumented=!0}return t
+        }({
+            instrumentationKey:"a6358707-fc5f-43b1-9559-c5f2b3132594"
+        });
+        window[aiName] = aisdk, aisdk.queue && 0 === aisdk.queue.length && aisdk.trackPageView({});
+
+        var ignoreSignalRTelemetryInitializer = function(envelope) {
+            if (envelope.name === 'Microsoft.ApplicationInsights.{0}.RemoteDependency' && envelope.baseData.name.indexOf("/signalr/") > -1) {
+                return false;
+            }
+        };
+        aisdk.queue.push(function () {
+            aisdk.addTelemetryInitializer(ignoreSignalRTelemetryInitializer);
+        });
+        </script>
+
+        <!-- Facebook Pixel Code -->
+        <script>
+            !function (f, b, e, v, n, t, s) {
+                if (f.fbq) return; n = f.fbq = function () {
+                    n.callMethod ?
+                        n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+                };
+                if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+                n.queue = []; t = b.createElement(e); t.async = !0;
+                t.src = v; s = b.getElementsByTagName(e)[0];
+                s.parentNode.insertBefore(t, s)
+            }(window, document, 'script',
+                'https://connect.facebook.net/en_US/fbevents.js');
+            fbq('init', '1204068316469744');
+            fbq('track', 'PageView');
+        </script>
+        <noscript>
+            <img height="1" width="1" style="display:none"
+                 src="https://www.facebook.com/tr?id=1204068316469744&ev=PageView&noscript=1" />
+        </noscript>
+        <!-- End Facebook Pixel Code -->
+    <!--Don't move this section under script twilio-chat.min.js-->
+    <script src="https://js.stripe.com/v3/" async=""></script>
+
+    
+    <!--*** TODO: temporary to add this link to using the monitor icon. We will removed it when we npm -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700,800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&amp;display=swap&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">
+    <link href="https://cdn.joblogic.com/bundles/MaterialDesign-Webfont/materialdesignicons.min.css" rel="stylesheet">
+    <!--TODO: temporary to add this link to using the monitor icon. We will removed it when we npm *** -->
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAntzoXzVZTuLeoZrs1Jbjd8QQGCzxKXcU&amp;signed_in=true&amp;libraries=places"></script><script src="https://az416426.vo.msecnd.net/next/ai.2.min.js"></script>
+
+    <link href="/Content/vueSelect?v=Mj_bm_yO1_7f2R_hsLd3GitXGptt6Pc5EOTkObo8YEQ1" rel="stylesheet">
+
+    <link href="/Content/newjoblogic?v=epg6WnK9Tby69gHr9rd2xgVXJQFSojrGOx7oCdf2FFM1" rel="stylesheet">
+
+    <link href="/Content/cdn?v=zMItIAMUh2x228ZT5tC5HHGjrAM18blCjdVlBxwIyw41" rel="stylesheet">
+
+    <link href="/Content/colorpicker?v=arV8VpUWC78q0om7r0EtGDptqvYeTXOnJW3HXCLu4741" rel="stylesheet">
+
+    <link href="/Content/datetime?v=DdKtPaKMoH6hzSMgdMlYqXqzqtctw-AmdvEbaWRiGbU1" rel="stylesheet">
+
+    <link href="/Content/kendo?v=BB9fmHu_farr3y3HWm2SfjeRoCE044hBzX91Q7djBOE1" rel="stylesheet">
+
+    <link href="/Content/toast?v=tfXcrt1WwAidTNzRu9SHQhrmPo4qvyItmSa-BduZftQ1" rel="stylesheet">
+
+
+    
+    <script src="/Scripts/lodash.min.js"></script>
+    <script src="/bundles/jquery?v=Igwo9BLll8QtIBVueMJnUHf3_jtkRAWk1YbcEsWmAZ81"></script>
+
+
+    <script src="/bundles/toast?v=S7RpAX9EFIzmIk3aDamimt68jCbGwoJ3LiY4B1VLOT01"></script>
+
+    <script src="/bundles/jqueryval?v=0joTulLFrT8AZdLyd86MO-1tSzgNTolAi57rY-OMSPg1"></script>
+
+    <script src="/bundles/jqueryajax?v=Xuam6TWPhcGt1QT7p5fexG3T-XZA9hjh88zJ89jkDQQ1"></script>
+
+    <script src="/bundles/polyfills?v=N50X0d0FcmnG3sOb1H_jQAb9UWov_Hn-QLYHl-VSTvU1"></script>
+
+
+    <script src="/bundles/newjoblogic?v=dVi0TphGv8Z3CSjTsM1PNiirIjWn3kya5AvkIGMf1UQ1"></script>
+
+    <script src="/bundles/joblogicutils?v=z3MyuDwv-TtvXSR-3DAHyJ5h_32fKJ9p0RujPit0Jyk1"></script>
+
+    <script src="/bundles/disablebuttons?v=kBu4SL6P2IEDgXRj9joe5PsL29zfKNTr_Ys1FpDNWcs1"></script>
+
+    <script src="/bundles/savefilters?v=n1aBS08IOkEAKVcj_5bdSNbk9PBMxa15Rs1aRT-EClk1"></script>
+
+    <script src="/bundles/datetime?v=7w496c2cj8IvarEN8vOD7Z9-e9NkPf0nwBF5K8RQaug1"></script>
+
+    <script src="/bundles/kendo?v=EOr_ac0k_WMhm8q8ko_wsr06xeYqnYukcsXn9Kqs8MU1"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/41/8/common.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/41/8/util.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps/api/js/AuthenticationService.Authenticate?1shttps%3A%2F%2Fgo.joblogic.com%2F&amp;4sAIzaSyAntzoXzVZTuLeoZrs1Jbjd8QQGCzxKXcU&amp;callback=_xdc_._9vinkd&amp;key=AIzaSyAntzoXzVZTuLeoZrs1Jbjd8QQGCzxKXcU&amp;token=36497"></script>
+
+
+
+<script src="/bundles/signalR?v=E2_rjJrPz6Uv7XwF5GXYJYmdZr20iK1F9m9qicdj4jc1"></script>
+        <!--Reference the autogenerated SignalR hub script. -->
+        <script src="/signalr/hubs"></script>
+
+    <script src="/bundles/vue?v=Q3NATAZLyiGQckyYp8RpNI-V4bHiMU111HZM4TF3osM1"></script>
+
+    <script src="/bundles/jlTableComponent?v=KTpUnc7xYoQI_VoXJglLRJKEEMUvTEQWSOn9L56Hqi81"></script>
+
+    <script src="/bundles/commonMixin?v=-g2QmOHFeoJgNKwH17BQSGBXVY6Y0SQjViAIO3KA-dU1"></script>
+
+    <script src="https://unpkg.com/@progress/kendo-datasource-vue-wrapper@2020.1.219/dist/cdn/kendo-datasource-vue-wrapper.min.js"></script>
+    <script src="https://unpkg.com/@progress/kendo-dropdowns-vue-wrapper@2019.2.621/dist/cdn/kendo-dropdowns-vue-wrapper.min.js"></script>
+
+    <script type="text/javascript">
+        Vue.use(KendoDatasourceVueWrapper);
+        Vue.use(KendoDropdownsVueWrapper);
+    </script>
+
+    <script src="/bundles/colorpicker?v=YumB6A8q-SXMSker0vZp3CxoWOyNwNAhYJjJSc116hg1"></script>
+
+
+    
+    <script src="https://media.twiliocdn.com/sdk/js/chat/v3.2/twilio-chat.min.js"></script>
+
+
+    <script src="/bundles/axaBaseChat?v=_t_bAtQdRr9c3H1emrue_hkxPFBe_LoaLcYkjs6STGg1"></script>
+
+
+
+
+<script async="" type="text/javascript" src="//trackcmp.net/visit?actid=475383677&amp;e=thuongl%40joblogic.com&amp;r=https%3A%2F%2Fgo.joblogic.com%2FAccount%2FLogOn&amp;u=https%3A%2F%2Fgo.joblogic.com%2F"></script><script src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/971264531/?random=1601306312878&amp;cv=9&amp;fst=1601306312878&amp;num=1&amp;guid=ON&amp;resp=GooglemKTybQhCsO&amp;eid=376635470&amp;u_h=900&amp;u_w=1440&amp;u_ah=821&amp;u_aw=1440&amp;u_cd=30&amp;u_his=3&amp;u_tz=420&amp;u_java=false&amp;u_nplug=3&amp;u_nmime=4&amp;gtm=2wg9g1&amp;sendb=1&amp;ig=1&amp;frm=0&amp;url=https%3A%2F%2Fgo.joblogic.com%2F&amp;ref=https%3A%2F%2Fgo.joblogic.com%2FAccount%2FLogOn&amp;tiba=Dashboard%20-%20JobLogic&amp;hn=www.googleadservices.com&amp;async=1&amp;rfmt=3&amp;fmt=4"></script></head>
+<body>
+
+    <noscript>
+        <div class="bg-danger text-center">
+            <h3 class="text-danger">We've noticed that you have JavaScript disabled.</h3>
+            <h4 class="text-danger">
+                Without it, this website may not function correctly. To find out more about JavaScript and how to enable it, please visit <a href="http://enable-javascript.com/">enable-javascript.com</a>.
+            </h4>
+        </div>
+    </noscript>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WR9ZV3D"
+                height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+<script type="text/javascript">
+    var user_DateTimeFormat = 'DD/MM/YYYY HH:mm';
+    var user_DateFormat = 'DD/MM/YYYY';
+    var user_TimeFormat = user_DateTimeFormat.replace(user_DateFormat + ' ', '');
+    var user_locale = 'en-GB';
+    var user_IANATimeZone = 'Asia/Bangkok';
+    var user_Guidid = 'e3d50c40-1766-4440-8361-e84f59fcdf34';
+    var global_NoPermissionMessage = 'You do not have permission to execute this function.';
+    var company_JoblogicMode = 'Advanced';
+    var company_IsAdvancedMode = company_JoblogicMode == 'Advanced';
+    var company_CallingCode = '84';
+    var company_CountryCallingCode = '';
+    var show_PartNumber = true;
+</script>
+
+
+
+
+<header class="jl-main-header">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <i class="mdi mdi-menu"></i>
+    </button>
+    <div class="flex ai-center jc-center">
+        <div class="jl-subscription hidden-xs mr18">
+            
+                <span>564 Days Remaining in Trial</span>
+                <a class="jl-button-yellow ml18" href="/Subscription/Trialling">
+                    <img src="/Content/svg/logo_inline.svg" alt="" height="24px" class="mr6">
+                    <span>Subscribe</span>
+                </a>
+
+        </div>
+
+        <div id="xero-integration"><button data-toggle="tooltip" data-placement="bottom" data-original-title="Required Credential" class="xero-integration mr12 RequiredCredential"><i class="mdi mdi-cloud mdi-36px"></i> <div><!----> <!----> <!----> <!----> <i class="mdi mdi-help mdi-18px"></i></div></button></div>
+
+        <div class="mr18 notification-wrapper">
+            <button class="notification-bell" onclick="$('.notification-panel').toggleClass('is-shown')">
+                <i class="mdi mdi-bell mdi-36px"></i>
+                <span class="notification-count" style="display:none">0</span>
+            </button>
+            <div class="notification-panel">
+                <div class="notification-content">
+                    <div class="notification-body" style="display: none;"><!-- *** Do not remove this span - Fix for Console error returning nothing (AJAX) -->
+<span></span>
+<!-- Do not remove this span *** --></div>
+                    <div class="notification-footer text-center" style="">
+                        You have no new notifications.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="action-menu-expand btn-menu-wrapper mr18 help-menu">
+            <button class="dropdown-toggle jl-button-blue" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                <i class="mdi mdi-help"></i>
+                <span>Help</span>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-right">
+                <li><a href="https://www.joblogic.com/knowledge-base/joblogic-web" target="_blank">Knowledge Base</a></li>
+                <li><a href="https://www.joblogic.com/videos/" target="_blank">Videos</a></li>
+                <hr class="mv6">
+                <li><a href="https://www.joblogic.com/latest-releases/" target="_blank">New Releases</a></li>
+                <hr class="mv6">
+                <li><a href="https://www.joblogic.com/knowledge-base/contact-us/" target="_blank">Contact Us</a></li>
+                    <li><a class="liveChatMenu openIntercom"><img id="lo_green_blinker" width="16" height="16" style="width: 16px; height: 16px; border: none; padding: 0px; margin: 0px 0px 0px 3px; opacity: 1;" src="https://d10lpsik1i8c69.cloudfront.net/graphics/blink_green.png" align="right" alt="">Live Chat</a></li>
+                <li><a href="https://www.surveymonkey.co.uk/r/SP2KN66" target="_blank"><span>Feedback</span></a></li>
+            </ul>
+        </div>
+        <div class="jl-profile-thumb-wrap btn-menu-wrapper">
+            <div class="dropdown">
+                <a href="#" class="dropdown-toggle profile-thumb" data-toggle="dropdown" aria-expanded="true" id="accountMenu">
+                    <img src="data:image/jpeg;base64,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" width="40" class="profile-image">
+                </a>
+                <ul class="dropdown-menu dropdown-menu-right">
+                    <li><span id="jsUserName">Thuong</span></li>
+                    <li>
+                        <a href="/Staff/Detail/34aefdd3-fffd-4625-8b95-c92706827997" id="profileMenu">
+                            Profile
+                        </a>
+                    </li>
+                    <hr class="mv6">
+                    <li>
+                        <a href="/Account/LogOff" id="logOffMenu">
+                            Log Off
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+<!-- *** User tracking data -->
+<script type="text/javascript">
+    window.inlineManualTracking = {
+        uid: 'e3d50c40-1766-4440-8361-e84f59fcdf34'
+    }
+
+    $(document).ready(function () {
+        var isOnTrial = true;
+        var showIntercom = true;
+        $('body > .jl-subscription').insertAfter('#ieErrorMsg');
+
+        if (showIntercom) {
+            $(document).on('click', '.openIntercom', function() {
+                Intercom('show');
+            });
+        }
+    });
+</script>
+<!-- User tracking data *** -->
+
+<script>
+    var isEngineer = 'Engineer';
+</script>
+
+<script src="/bundles/glossaryInit?v=CY7sH3yf3gw7kZjFWzn28S1Zsp7LTt3BtUuNabA7SLE1"></script>
+
+
+<script src="/bundles/Notification?v=yCAt9p4uaLjtCmRUcG3Iabn8fYaDb_DtqYr035_lBkg1"></script>
+
+<script src="/bundles/tags?v=7oHxi6KMljIyMGAMahuV0GfvNfNbIdoXOEDZu7fqqCQ1"></script>
+
+    <script type="text/javascript">
+        var VM_UserGuidId = 'e3d50c40-1766-4440-8361-e84f59fcdf34';
+        var VM_TenantId = '1f16f7e3-a41e-487e-99c1-d67e8296b658';
+        var VM_DismissNotificationUrl = '/Notification/Dismiss';
+        var VM_GetNotificationsNotificationUrl = '/Notification/GetNotifications';
+    </script>
+<script src="/bundles/signalRInit?v=bRphUE-SXb8N2slXB3iaYeVapSowUYBr---_P1lIR-U1"></script>
+
+    <script>
+        var VM_syncDataUrl = '/AccountIntegration/Sync';
+        var VM_confirmSyncUrl = '/AccountIntegration/ConfirmSync';
+        var VM_GetSyncStatusUrl = '/AccountIntegration/GetSyncStatus';
+        var VM_SyncDataSuccessRedirectUrl = '/Setting/AccountIntegration';
+    </script>
+<script src="/bundles/accountIntegration?v=SPqsYbYN9sKyT9Bh9G4AfKVwRNDA2JpadFC_oeN7KHo1"></script>
+
+<aside class="jl-sidebar-wrap">
+    <div class="logo-wrapper">
+        <div class="jl-logo">
+            <a href="/Dashboard/Initial">
+                <img src="data:image/jpeg;base64,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" alt="Logo" class="company-logoimage">
+            </a>
+        </div>
+        <div class="jl-sidebar-toggle hidden-xs">
+            <a href="#"><i class="mdi mdi-menu"></i></a>
+        </div>
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <i class="mdi mdi-menu"></i>
+        </button>
+    </div>
+    <div class="jl-sidebar-nav">
+        <ul class="nav nav-stacked">
+
+                <li class="">
+                    <a href="/" id="dashboardMenu" title="Main"><i class="mdi mdi-view-dashboard"></i><span>Dashboard</span></a>
+                    
+                </li>
+
+
+
+                <li class="jl-has-submenu">
+                    <a href="#" id="customerMenu"><i class="mdi mdi-account"></i><span>Customers</span></a>
+                    <ul id="menuItemCustomer" class="jl-submenu">
+                            <li><a href="/Customer/Create" id="createCustomerMenu">Add Customer</a></li>
+                                                    <li><a href="/Customer" id="listCustomerMenu">All Customers</a></li>
+                    </ul>
+                </li>
+
+                <li class="jl-has-submenu">
+                    <a href="#" id="siteMenu"><i class="mdi mdi-city"></i><span>Sites</span></a>
+                    <ul id="menuItemSite" class="jl-submenu">
+                            <li>
+                                <a href="/Site/Create" id="createSiteMenu">Add Site</a>
+                            </li>
+                                                    <li>
+                                <a href="/Site" id="listSite">All Sites</a>
+                            </li>
+                    </ul>
+                </li>
+
+                <li class="jl-has-submenu">
+                    <a href="#" id="assetMenu"><i class="mdi mdi-washing-machine"></i><span>Assets</span></a>
+                    <ul id="menuItemAsset" class="jl-submenu">
+                            <li><a href="/Asset/Create" id="createAssetMenu">Add Asset</a></li>
+                                                    <li><a href="/Asset" id="listAssetMenu">All Assets</a></li>
+                    </ul>
+                </li>
+
+                <li class="jl-has-submenu">
+                    <a href="#" id="jobMenu"><i class="mdi mdi-wrench"></i><span>Jobs</span></a>
+                    <ul id="menuItemJob" class="jl-submenu">
+                            <li><a href="/Job/Create" id="createJobMenu">Log Job</a></li>
+                                                    <li><a href="/Job" id="listJobMenu">All Jobs</a></li>
+                    </ul>
+                </li>
+
+                <li class="jl-has-submenu">
+                    <a href="#" id="quoteMenu"><i class="mdi mdi-clipboard-text"></i><span>Quotes</span></a>
+                    <ul id="menuItemQuote" class="jl-submenu">
+                            <li><a href="/Quote/Create" id="createQuoteMenu">Log Quote</a></li>
+                                                    <li><a href="/Quote" id="listQuoteMenu">All Quotes</a></li>
+                    </ul>
+                </li>
+                            <li class="jl-has-submenu">
+                    <a href="#" id="invoiceMenu"><i class="mdi mdi-credit-card"></i><span>Invoices</span></a>
+                    <ul id="menuItemInvoice" class="jl-submenu">
+                            <li>
+                                <a href="/CGroupInvoice/Create" id="listCreateCGroupMenu">Create Customer Grouped</a>
+                            </li>
+                                                    <li>
+                                <a href="/Invoice" id="listInvoiceMenu">All Invoices</a>
+                            </li>
+                    </ul>
+                </li>
+
+                <li class="jl-has-submenu">
+                    <a href="#" id="ppmContractMenu"><i class="mdi mdi-calendar-multiple-check"></i><span>PPM</span></a>
+                    <ul id="menuItemPPMContract" class="jl-submenu">
+                            <li>
+                                <a href="/PPMContract/Create" id="createPPMContracteMenu">Add PPM Contract</a>
+                            </li>
+                                                    <li>
+                                <a href="/PPMContract" id="listPPMContractMenu">All PPM Contracts</a>
+                            </li>
+                    </ul>
+                </li>
+
+                <li class="">
+                    <a href="/PurchaseOrder" id="purchaseOrderMenu" title="All Purchase Orders"><i class="mdi mdi-file-document"></i><span>Purchase Orders</span></a>
+                    
+                </li>
+
+                <li><a href="/Report" id="reportAndExportMenu"><i class="mdi mdi-export"></i><span>Reports</span></a></li>
+                            <li class="jl-has-submenu">
+                    <a href="#" id="engineerTrackingMenu"><i class="mdi mdi-account-multiple"></i><span>Engineers</span></a>
+                    <ul class="jl-submenu">
+                            <li>
+                                <a href="/Staff/Engineers" id="engineersListMenu">Engineers List</a>
+                            </li>
+                                                    <li>
+                                <a href="/NonProductiveTime" id="listNonProductiveTimeMenu">All Non-Productive Time</a>
+                            </li>
+                                                    <li>
+                                <a href="/Scheduler" id="viewPlannerMenu">View Planner</a>
+                            </li>
+                                                    <li>
+                                <a class="flex jc-between ai-center full-width" href="/Timesheet" id="timesheetMenu">Timesheets <span class="label label-warning"><i>Beta</i></span></a>
+                            </li>
+                                                    <li>
+                                <a class="flex jc-between ai-center full-width" href="/EngineerTracking/RouteSchedule" id="routeScheduleMenu">Route Schedule</a>
+                            </li>
+                                                    <li><a href="/EngineerTracking/Live" id="liveTrackingMenu">Live Tracking</a></li>
+                                                    <li><a href="/EngineerTracking/Historical" id="historicalTrackingMenu">Historical Tracking</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="/Logbook" id="logbook">
+                        <i class="mdi mdi-book-open-page-variant"></i>
+                        <span>Forms Logbook</span>
+                    </a>
+                </li>
+
+                <li class="jl-has-submenu">
+                    <a href="#" id="refcom"><i class="mdi mdi-gas-cylinder"></i><span>Refcom</span></a>
+                    <ul class="jl-submenu">
+                            <li><a href="/Refcom">Gas Cylinders</a></li>
+                                                    <li><a href="/Refcom/Reports">Log Books</a></li>
+                                                    <li><a href="/Refcom/LeakChecks">Leak Checks</a></li>
+                    </ul>
+                </li>
+                            <li class="separator"></li>
+                <li>
+                    <a href="/Setting" id="settings">
+                        <i class="mdi mdi-account-cog"></i>
+                        <span>Settings</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="/Newsfeed" id="newsFeed">
+                        <i class="mdi mdi-newspaper"></i>
+                        <span>News Feed <label class="label label-unsuccess" style="border-radius: 5px; padding: 0 5px;"></label></span>
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="/Dashboard/Initial" id="gettingStartedMenuTrial">
+                        <i class="icon-getting-started"></i>
+                        <span>Complete Your Setup</span>
+                    </a>
+                </li>
+                        <li class="pt12">
+                <button type="button" class="jl-button openIntercom openIntercomChat">
+                    <span class="icon-wrapper">
+                        <i class="mdi mdi-forum"></i>
+                    </span>
+                    <span>Live Chat</span>
+                </button>
+            </li>
+
+        </ul>
+
+        <div class="jl-brand-wrapper flex jc-center ai-center">
+            <a class="jl-brand" href="https://www.joblogic.com/uk/" target="_blank"> <img src="https://joblogiccdnstorage.blob.core.windows.net/bundles/images/logo/JoblogicLogo.svg" title="Powered by Job Logic" alt="job logic uk"> </a>
+            <a class="jl-brand small" href="https://www.joblogic.com/uk/" target="_blank"> <img src="https://joblogiccdnstorage.blob.core.windows.net/bundles/images/logo/JoblogicSmallLogo.svg" title="Powered by Job Logic" alt="job logic uk"> </a>
+        </div>
+    </div>
+</aside>
+<input name="__RequestVerificationToken" type="hidden" value="2Huij1cMdOPzbr5lxOcZnITKiy0fLQhOIAqOjZ2MuagJjDhloHN2p4x6OJKSKIHUSTe9LDgB4ou3kqK124bqSUMYTn81AUCq-Ua-7rUVl3XalVfs0" autocomplete="off">
+    <div class="modal fade jlSwitchModal" id="modalSwitchContainer" role="dialog">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content" jlswitch="">
+            </div>
+        </div>
+    </div>
+
+    <div class="hide" id="deleteConfirmationModal">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+            <h4 class="modal-title">Confirm</h4>
+        </div>
+        <div class="modal-body">
+            <h5 id="modalConfirmMessage"></h5>
+        </div>
+        <div class="modal-footer">
+            <button class="jl-button-red jl-button-cancel " data-dismiss="modal" id="modalConfirmNo" type="button"><i class="mdi mdi-close-circle"></i><span>No</span></button>
+        </div>
+    </div>
+
+    <div class="modal activate-modal fade" id="activate-modal-dialog" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content modal-content-override">
+                <div class="modal-body modal-body-override">
+                    <b class="activate-modal-message"></b>
+                </div>
+                <div class="modal-footer modal-footer-override">
+                    <a class="jl-button-yellow" href="/Subscription">
+                        <img src="/Content/svg/logo_inline.svg" height="20px">
+                        <span>Enter Payment Detail</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/bundles/jlswitch?v=hnFgETIhjwtvVKxOHLgf-V-9tEm2GX1k1Fr0oasy2pk1"></script>
+
+    <script src="/bundles/comboboxModalAddItem?v=qRQqx_OQg2ydqu2t7lpLXuf3m7FGFOoUZxtFGdbxqTg1"></script>
+
+    <script src="/bundles/multiselectModalAddItem?v=WN-5nuQmJGdk6LDnpp8nH5cx0sKEg826XYNAHCk3VsM1"></script>
+
+
+    <section class="jl-content-wrap">
+        <div id="ieErrorMsg"><!----></div><div class="jl-subscription hidden-sm hidden-md hidden-lg mb12">
+    
+                <span>564 Days Remaining in Trial</span>
+                <a class="jl-button-yellow ml18" href="/Subscription/Trialling">
+                    <img src="/Content/svg/logo_inline.svg" alt="" height="24px" class="mr6">
+                    <span>Subscribe</span>
+                </a>
+
+</div>
+
+        
+
+
+<link href="/Content/dashboard?v=UcnFPRysV9k4xhvUgTV1j3MX25PwqHdgv_0YdC00ERg1" rel="stylesheet">
+
+
+
+<script src="/bundles/chart?v=tUo5zTjfGxYVJzNo1cq6a0oVp9zl0xDkxOB_IHaK0s01"></script>
+
+
+    <div class="dashboard-container responsive-dasboard ">
+        <div class="row">
+            <div class="col-sm-4 ajaxLoadAndRefresh" data-action="/Dashboard/JobMetrics">
+<div class="panel panel-default">  <div class="panel-heading">  <span class="panel-title">Job Overview  </span>  </div>        <ul class="list-group">
+            <li class="list-group-item">Outstanding <span class="item-count">(21)</span></li>
+            <li class="list-group-item">Require invoicing <span class="item-count">(0)</span></li>
+            <li class="list-group-item">Invoiced <span class="item-count">(6)</span></li>
+            <li class="list-group-item">Total jobs to date <span class="item-count">(27)</span></li>
+        </ul>  
+</div></div>
+            <div class="col-sm-4 ajaxLoadAndRefresh" data-action="/Dashboard/LoggedJobMetrics"><div class="panel panel-default">  <div class="panel-heading">  <span class="panel-title">Jobs Logged  </span>  </div>    <ul class="list-group">
+        <li class="list-group-item">Logged today <span class="item-count">(0)</span></li>
+        <li class="list-group-item">Logged in last 7 days <span class="item-count">(0)</span></li>
+        <li class="list-group-item">Logged in last 30 days <span class="item-count">(12)</span></li>
+        <li class="list-group-item">Total jobs logged to date <span class="item-count">(27)</span></li>
+    </ul>
+</div></div>
+            <div class="col-sm-4 ajaxLoadAndRefresh" data-action="/Dashboard/CompletedJobMetrics"><div class="panel panel-default">  <div class="panel-heading">  <span class="panel-title">Jobs Completed  </span>  </div>    <ul class="list-group">
+        <li class="list-group-item">Completed today <span class="item-count">(0)</span></li>
+        <li class="list-group-item">Completed in last 7 days <span class="item-count">(0)</span></li>
+        <li class="list-group-item">Completed in last 30 days <span class="item-count">(0)</span></li>
+        <li class="list-group-item">Total jobs completed to date<span class="item-count">(6)</span></li>
+    </ul>
+</div></div>
+        </div>
+        <div class="row responsive-grid">
+            <div class="col-md-6 col-sm-12 ajaxLoadAndRefresh" data-action="/Dashboard/OutstandingVsComplete"><div class="panel panel-default">
+  <div class="panel-heading">
+    <div class="panel-title flex ai-center">
+      <span class="mr6">Outstanding Jobs vs Completed Jobs</span> <span class="glossary" id="glossary_outstanding_jobs_vs_completed_jobs" data-content="Number of jobs logged within a particular time frame vs. number of jobs completed within the same time frame" data-container="body" data-toggle="popover" data-placement="right" data-original-title="" title=""><svg width="16" height="16" viewBox="0 0 16 16"><path data-name="Forma 1" class="glossary-color" d="M154,68.047a0.781,0.781,0,1,1-.781.781A0.781,0.781,0,0,1,154,68.047ZM154,57a8,8,0,1,0,8,8A8,8,0,0,0,154,57Zm0,14.752A6.751,6.751,0,1,1,160.751,65,6.747,6.747,0,0,1,154,71.751Zm0-10.736a2.5,2.5,0,0,0-2.5,2.5,0.625,0.625,0,1,0,1.25,0,1.25,1.25,0,1,1,1.25,1.25,0.625,0.625,0,0,0-.625.625v1.563a0.625,0.625,0,1,0,1.25,0V65.937A2.5,2.5,0,0,0,154,61.015Z" transform="translate(-146 -57)"></path></svg></span>
+    </div>
+  </div>
+  <div class="panel-body panel-with-subheader">
+    <div class="row text-center panel-sub-header hidden-xs">
+      <div class="col-sm-4">
+        <p>Today</p>
+      </div>
+      <div class="col-sm-4">
+        <p>Last 7 Days</p>
+      </div>
+      <div class="col-sm-4">
+        <p>Last 30 Days</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-4 text-center">
+        <div class="circle-chart-wrap">
+          <div class="circle-chart">
+            <div class="visible-xs-block mb12"><strong>Today</strong></div>
+            <canvas id="OutstandingVsComplete_Today" width="300" height="300" style="width: 150px; height: 150px;"></canvas> <script type="text/javascript">var ctx = document.getElementById("OutstandingVsComplete_Today").getContext("2d");var data = JSON.parse('[{"value":0.0,"color":"#f1c40f","label":"Outstanding"},{"value":0.0,"color":"#1abc9c","label":"Complete"}]');var options = JSON.parse('{}');var OutstandingVsComplete_Today_chart = new Chart(ctx).Doughnut(data, options)</script>
+          </div>
+          <p><strong>0/0</strong></p>
+        </div>
+      </div>
+      <div class="col-sm-4 text-center">
+        <div class="circle-chart-wrap">
+          <div class="circle-chart">
+            <div class="visible-xs-block mb12 mt12"><strong>Last 7 Days</strong></div>
+            <canvas id="OutstandingVsComplete_Last7Days" width="300" height="300" style="width: 150px; height: 150px;"></canvas> <script type="text/javascript">var ctx = document.getElementById("OutstandingVsComplete_Last7Days").getContext("2d");var data = JSON.parse('[{"value":0.0,"color":"#f1c40f","label":"Outstanding"},{"value":0.0,"color":"#1abc9c","label":"Complete"}]');var options = JSON.parse('{}');var OutstandingVsComplete_Last7Days_chart = new Chart(ctx).Doughnut(data, options)</script>
+          </div>
+          <p><strong>0/0</strong></p>
+        </div>
+      </div>
+      <div class="col-sm-4 text-center">
+        <div class="circle-chart-wrap">
+          <div class="circle-chart">
+            <div class="visible-xs-block mb12 mt12"><strong>Last 30 Days</strong></div>
+            <canvas id="OutstandingVsComplete_Last30Days" width="300" height="300" style="width: 150px; height: 150px;"></canvas> <script type="text/javascript">var ctx = document.getElementById("OutstandingVsComplete_Last30Days").getContext("2d");var data = JSON.parse('[{"value":10.0,"color":"#f1c40f","label":"Outstanding"},{"value":0.0,"color":"#1abc9c","label":"Complete"}]');var options = JSON.parse('{}');var OutstandingVsComplete_Last30Days_chart = new Chart(ctx).Doughnut(data, options)</script>
+          </div>
+          <p><strong>10/0</strong></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="panel-footer">
+    <div class="chart-status-wrap">
+      <div class="chart-status green-outstanding"><strong>Complete</strong></div>
+      <div class="chart-status yellow-outstanding"><strong>Outstanding</strong></div>
+    </div>
+  </div>
+</div>
+
+<script>
+  $(function() {
+    addGlossary(glossaryJson);
+  });
+</script></div>
+            <div class="col-md-6 col-sm-12 ajaxLoadAndRefresh" data-action="/Dashboard/FirstTimeFixes"><div class="panel panel-default">
+  <div class="panel-heading">
+    <div class="panel-title flex ai-center">
+      <span class="mr6">First Time Fixes</span> <span class="glossary" id="glossary_first_time_fixes" data-content="Number of jobs, logged within a particular time frame, which were completed on their first visit vs. those which took 2 or more visits" data-container="body" data-toggle="popover" data-placement="right" data-original-title="" title=""><svg width="16" height="16" viewBox="0 0 16 16"><path data-name="Forma 1" class="glossary-color" d="M154,68.047a0.781,0.781,0,1,1-.781.781A0.781,0.781,0,0,1,154,68.047ZM154,57a8,8,0,1,0,8,8A8,8,0,0,0,154,57Zm0,14.752A6.751,6.751,0,1,1,160.751,65,6.747,6.747,0,0,1,154,71.751Zm0-10.736a2.5,2.5,0,0,0-2.5,2.5,0.625,0.625,0,1,0,1.25,0,1.25,1.25,0,1,1,1.25,1.25,0.625,0.625,0,0,0-.625.625v1.563a0.625,0.625,0,1,0,1.25,0V65.937A2.5,2.5,0,0,0,154,61.015Z" transform="translate(-146 -57)"></path></svg></span>
+    </div>
+  </div>
+  <div class="panel-body panel-with-subheader">
+    <div class="row text-center panel-sub-header hidden-xs">
+      <div class="col-sm-6">
+        <p>Last 30 Days</p>
+      </div>
+      <div class="col-sm-6">
+        <p>All Time</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="text-center">
+          <div>
+            <div class="visible-xs-block mb12"><strong>Last 30 Days</strong></div>
+            <canvas id="FirstTimeFixes_Last30Days" width="300" height="300" style="width: 150px; height: 150px;"></canvas> <script type="text/javascript">var ctx = document.getElementById("FirstTimeFixes_Last30Days").getContext("2d");var data = JSON.parse('[{"value":0.0,"color":"#1abc9c","label":"First Time"},{"value":0.0,"color":"#f1c40f","label":"Not First Time"}]');var options = JSON.parse('{}');var FirstTimeFixes_Last30Days_chart = new Chart(ctx).Doughnut(data, options)</script>
+          </div>
+          <p><strong>0/0</strong></p>
+        </div>
+      </div>
+      <div class="col-sm-6 text-center">
+        <div class="text-center">
+          <div>
+            <div class="visible-xs-block mb12 mt12"><strong>All Time</strong></div>
+            <canvas id="FirstTimeFixes_AllTime" width="300" height="300" style="width: 150px; height: 150px;"></canvas> <script type="text/javascript">var ctx = document.getElementById("FirstTimeFixes_AllTime").getContext("2d");var data = JSON.parse('[{"value":1.0,"color":"#1abc9c","label":"First Time"},{"value":0.0,"color":"#f1c40f","label":"Not First Time"}]');var options = JSON.parse('{}');var FirstTimeFixes_AllTime_chart = new Chart(ctx).Doughnut(data, options)</script>
+          </div>
+          <p><strong>1/0</strong></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="panel-footer">
+    <div class="chart-status-wrap">
+      <div class="chart-status green-firsttime"><strong>First Time</strong></div>
+      <div class="chart-status yellow-firsttime"><strong>Not First Time</strong></div>
+    </div>
+  </div>
+</div>
+
+<script>
+  $(function() {
+    addGlossary(glossaryJson);
+  });
+</script></div>
+        </div>
+        <div class="ajaxLoadAndRefresh" data-action="/Dashboard/TopJobTypes"><div class="panel panel-default">
+  <div class="panel-heading">
+    <div class="panel-title flex ai-center">
+      <span class="mr6">Top Job Types (All Time)</span> <span class="glossary" id="glossary_top_job_types" data-content="Top 10 job types used across all jobs" data-container="body" data-toggle="popover" data-placement="right" data-original-title="" title=""><svg width="16" height="16" viewBox="0 0 16 16"><path data-name="Forma 1" class="glossary-color" d="M154,68.047a0.781,0.781,0,1,1-.781.781A0.781,0.781,0,0,1,154,68.047ZM154,57a8,8,0,1,0,8,8A8,8,0,0,0,154,57Zm0,14.752A6.751,6.751,0,1,1,160.751,65,6.747,6.747,0,0,1,154,71.751Zm0-10.736a2.5,2.5,0,0,0-2.5,2.5,0.625,0.625,0,1,0,1.25,0,1.25,1.25,0,1,1,1.25,1.25,0.625,0.625,0,0,0-.625.625v1.563a0.625,0.625,0,1,0,1.25,0V65.937A2.5,2.5,0,0,0,154,61.015Z" transform="translate(-146 -57)"></path></svg></span>
+    </div>
+  </div>
+  <div class="panel-body panel-with-subheader">
+    <div class="panel-sub-header m-12">
+      <div class="ph18">
+        <p>Job Count</p>
+      </div>
+    </div>
+    <div style="padding-left: 0;">
+      <canvas id="TopJobTypes" height="450" width="750" style="width: 375px; height: 225px;"></canvas> <script type="text/javascript">var ctx = document.getElementById("TopJobTypes").getContext("2d");var data = JSON.parse('{"labels":["Maintenance","Installation","Repair"],"datasets":[{"label":"Top Job Types by Job Count","fillColor":"rgba(26, 188, 156, 0.5)","strokeColor":"#1abc9c","data":[25.0,1.0,1.0]}]}');var options = JSON.parse('{}');var TopJobTypes_chart = new Chart(ctx).Bar(data, options)</script>
+    </div>
+  </div>
+</div>
+
+<script>
+  $(function() {
+    addGlossary(glossaryJson);
+  });
+</script></div>
+        <div class="ajaxLoadAndRefresh" data-action="/Dashboard/JobLoggingTrends"><div class="panel panel-default">
+  <div class="panel-heading">
+    <div class="panel-title flex ai-center">
+      <span class="mr6">Job Trends</span> <span class="glossary" id="glossary_job_trends" data-content="Number of jobs logged in a particular month vs. number of jobs completed in the same month" data-container="body" data-toggle="popover" data-placement="right" data-original-title="" title=""><svg width="16" height="16" viewBox="0 0 16 16"><path data-name="Forma 1" class="glossary-color" d="M154,68.047a0.781,0.781,0,1,1-.781.781A0.781,0.781,0,0,1,154,68.047ZM154,57a8,8,0,1,0,8,8A8,8,0,0,0,154,57Zm0,14.752A6.751,6.751,0,1,1,160.751,65,6.747,6.747,0,0,1,154,71.751Zm0-10.736a2.5,2.5,0,0,0-2.5,2.5,0.625,0.625,0,1,0,1.25,0,1.25,1.25,0,1,1,1.25,1.25,0.625,0.625,0,0,0-.625.625v1.563a0.625,0.625,0,1,0,1.25,0V65.937A2.5,2.5,0,0,0,154,61.015Z" transform="translate(-146 -57)"></path></svg></span>
+    </div>
+  </div>
+  <div class="panel-body panel-with-subheader">
+    <div class="panel-sub-header m-12">
+      <div class="ph18">
+        <p>Job Count</p>
+      </div>
+    </div>
+    <div style="padding-left: 0;">
+            <canvas id="JobTrends" width="1768" height="332" style="max-width: 100%; height: 166px; width: 884px;"></canvas> <script type="text/javascript">var ctx = document.getElementById("JobTrends").getContext("2d");var data = JSON.parse('{"labels":["Aug 2020","Sep 2020"],"datasets":[{"label":"Job Logging Trend","fillColor":"rgba(248, 226, 135, 0.5)","pointHighlightFill":"#f8e287","data":[19.0,8.0]},{"label":"Job Completed Trend","fillColor":"rgba(153, 203, 237, 0.5)","pointHighlightFill":"#99cbed","data":[1.0,0.0]}]}');var options = JSON.parse('{}');var JobTrends_chart = new Chart(ctx).Line(data, options)</script>    </div>
+  </div>
+  <div class="panel-footer">
+    <div class="chart-status-wrap">
+      <div class="chart-status blue-jobtrend"><strong>Complete</strong></div>
+      <div class="chart-status yellow-jobtrend"><strong>Outstanding</strong></div>
+    </div>
+  </div>
+</div>
+
+<script>
+  $(function() {
+    addGlossary(glossaryJson);
+  });
+</script></div>
+        <div class="ajaxLoadAndRefresh" data-action="/Dashboard/TopCustomers"><div class="panel panel-default">
+  <div class="panel-heading">
+    <div class="panel-title flex ai-center">
+      <span class="mr6">Top Customers</span> <span class="glossary" id="glossary_top_customers" data-content="Top 10 customers with the highest number of jobs logged" data-container="body" data-toggle="popover" data-placement="right" data-original-title="" title=""><svg width="16" height="16" viewBox="0 0 16 16"><path data-name="Forma 1" class="glossary-color" d="M154,68.047a0.781,0.781,0,1,1-.781.781A0.781,0.781,0,0,1,154,68.047ZM154,57a8,8,0,1,0,8,8A8,8,0,0,0,154,57Zm0,14.752A6.751,6.751,0,1,1,160.751,65,6.747,6.747,0,0,1,154,71.751Zm0-10.736a2.5,2.5,0,0,0-2.5,2.5,0.625,0.625,0,1,0,1.25,0,1.25,1.25,0,1,1,1.25,1.25,0.625,0.625,0,0,0-.625.625v1.563a0.625,0.625,0,1,0,1.25,0V65.937A2.5,2.5,0,0,0,154,61.015Z" transform="translate(-146 -57)"></path></svg></span>
+    </div>
+  </div>
+  <div class="panel-body panel-with-subheader">
+    <div class="panel-sub-header m-12">
+      <div class="ph18">
+        <p>Job Count</p>
+      </div>
+    </div>
+    <div style="padding-left: 0;">
+      <canvas id="TopCustomers" height="450" width="2000" style="width: 1000px; height: 225px;"></canvas> <script type="text/javascript">var ctx = document.getElementById("TopCustomers").getContext("2d");var data = JSON.parse('{"labels":["FPT Shop","Sabrina","ABC Bakery","Vinamilk","Customer B","Sample Customer","Sample Customer","Sample Customer"],"datasets":[{"label":"Top Customers by Job Count","fillColor":"rgba(26, 188, 156, 0.5)","strokeColor":"#1abc9c","data":[15.0,4.0,2.0,2.0,1.0,1.0,1.0,1.0]}]}');var options = JSON.parse('{}');var TopCustomers_chart = new Chart(ctx).Bar(data, options)</script>
+    </div>
+  </div>
+</div>
+
+<script>
+  $(function() {
+    addGlossary(glossaryJson);
+  });
+</script></div>
+        <div class="ajaxLoadAndRefresh" data-action="/Dashboard/TopSites"><div class="panel panel-default">
+  <div class="panel-heading">
+    <div class="panel-title flex ai-center">
+      <span class="mr6">Top Sites</span> <span class="glossary" id="glossary_top_sites" data-content="Top 10 sites with the highest number of jobs logged" data-container="body" data-toggle="popover" data-placement="right" data-original-title="" title=""><svg width="16" height="16" viewBox="0 0 16 16"><path data-name="Forma 1" class="glossary-color" d="M154,68.047a0.781,0.781,0,1,1-.781.781A0.781,0.781,0,0,1,154,68.047ZM154,57a8,8,0,1,0,8,8A8,8,0,0,0,154,57Zm0,14.752A6.751,6.751,0,1,1,160.751,65,6.747,6.747,0,0,1,154,71.751Zm0-10.736a2.5,2.5,0,0,0-2.5,2.5,0.625,0.625,0,1,0,1.25,0,1.25,1.25,0,1,1,1.25,1.25,0.625,0.625,0,0,0-.625.625v1.563a0.625,0.625,0,1,0,1.25,0V65.937A2.5,2.5,0,0,0,154,61.015Z" transform="translate(-146 -57)"></path></svg></span>
+    </div>
+  </div>
+  <div class="panel-body panel-with-subheader">
+    <div class="panel-sub-header m-12">
+      <div class="ph18">
+        <p>Job Count</p>
+      </div>
+    </div>
+    <div style="padding-left: 0;">
+      <canvas id="TopSites" height="450" width="2500" style="width: 1250px; height: 225px;"></canvas> <script type="text/javascript">var ctx = document.getElementById("TopSites").getContext("2d");var data = JSON.parse('{"labels":["FPT Nguyen Trai","Sabrina","FPT Shop - 1A P","ABC Bakery","Customer B","Sample Site 1","Sample Site 2","Sample Site 3","Vinamilk - 123","Vinamilk - Site"],"datasets":[{"label":"Top Sites by Job Count","fillColor":"rgba(26, 188, 156, 0.5)","strokeColor":"#1abc9c","data":[12.0,4.0,3.0,2.0,1.0,1.0,1.0,1.0,1.0,1.0]}]}');var options = JSON.parse('{}');var TopSites_chart = new Chart(ctx).Bar(data, options)</script>
+    </div>
+  </div>
+</div>
+
+<script>
+  $(function() {
+    addGlossary(glossaryJson);
+  });
+</script></div>
+        <div class="ajaxLoadAndRefresh" data-action="/Dashboard/EngineerLeague"><div id="EngineerLeague" class="panel panel-default"><div class="panel-heading"><div class="panel-title flex ai-center"><span class="mr6">Engineer League of Completed Visits</span> <span id="glossary_league_of_completed_visits" data-content="Total number of visits completed by the engineer within a particular time frame" data-container="body" data-toggle="popover" data-placement="right" class="glossary" data-original-title="" title=""><svg width="16" height="16" viewBox="0 0 16 16"><path data-name="Forma 1" d="M154,68.047a0.781,0.781,0,1,1-.781.781A0.781,0.781,0,0,1,154,68.047ZM154,57a8,8,0,1,0,8,8A8,8,0,0,0,154,57Zm0,14.752A6.751,6.751,0,1,1,160.751,65,6.747,6.747,0,0,1,154,71.751Zm0-10.736a2.5,2.5,0,0,0-2.5,2.5,0.625,0.625,0,1,0,1.25,0,1.25,1.25,0,1,1,1.25,1.25,0.625,0.625,0,0,0-.625.625v1.563a0.625,0.625,0,1,0,1.25,0V65.937A2.5,2.5,0,0,0,154,61.015Z" transform="translate(-146 -57)" class="glossary-color"></path></svg></span></div></div> <div class="panel-body dashboard-250-locked-scrollable panel-with-subheader table-list"><div class="panel-sub-header row hidden-xs"><div class="col-sm-4"><p>Today</p></div> <div class="col-sm-4"><p>Last 7 Days</p></div> <div class="col-sm-4"><p>Last 30 Days</p></div></div> <div class="jl-listing-data hidden-xs"><div class="jl-listing-body"></div></div> <div class="visible-xs-block"><div class="p12"><strong class="text-center">Today</strong> <div class="jl-listing-data"><div class="jl-listing-body"></div></div></div> <div class="p12"><strong class="text-center">Last 7 Days</strong> <div class="jl-listing-data"><div class="jl-listing-body"></div></div></div> <div class="p12"><strong class="text-center">Last 30 Days</strong> <div class="jl-listing-data"><div class="jl-listing-body"></div></div></div></div></div></div>
+
+<script>
+    var EngineerLeaguePM = {"Today":[],"Last7Days":[],"Last30Days":[]};
+    var EngineerLeagueVM = new Vue({
+        el: '#EngineerLeague',
+        data: {
+            Model: EngineerLeaguePM
+        },
+        mounted: function () {
+
+        },
+        computed: {
+            maxNumber: function () {
+                return Math.max(this.Model.Last30Days.length, this.Model.Last7Days.length, this.Model.Today.length);
+            }
+        }
+    });
+
+  $(function() {
+    addGlossary(glossaryJson);
+  });
+</script></div>
+    </div>
+    <script type="text/javascript">
+        $(function () {
+            toggleSpinnerModal(true);
+            var count = 0;
+    
+            $('.ajaxLoadAndRefresh').each(function (i, element) {
+                count++;
+
+                var $element = $(element);
+                var action = $element.data('action');
+                $element.load(action);
+
+                if (count == 10) {
+                    setTimeout(() => {
+                        toggleSpinnerModal(false);
+                    }, 3000);
+                }
+            });
+    
+            $(".dashboard-container").tooltip({ selector: '[tooltip=tooltip]' });
+        });
+    </script>
+
+
+        
+        <div class="jlSwitchModalContent hide" id="syncModal">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                <h4 class="modal-title" id="modalTitle">Confirm Sync Request</h4>
+            </div>
+
+            <div class="modal-body text-center">
+                <label id="confirmationMsg">
+                </label>
+                <div>
+                    <p>You can also keep track of the status of your sync request by visiting <a href="/AccountIntegration/SyncHistory">Sync History</a>.</p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="jl-button-red jl-button-cancel " data-dismiss="modal" id="cancelSync">
+                    <i class="mdi mdi-close-circle"></i><span>Cancel</span>
+                </button>
+                <button type="submit" class="jl-button-green ml12" id="proceedSync">
+                    <i class="mdi mdi-cloud-sync"></i><span>Proceed</span>
+                </button>
+            </div>
+
+        </div>
+        <div class="jlSwitchModalContent hide" id="syncSuccessModal">
+            <div class="modal-header">
+                <h4 class="modal-title" id="modalTitle">Sync Data - Confirmation</h4>
+            </div>
+
+            <div class="modal-body">
+                <div class="flex ai-center jc-center m-12">
+                    <div>
+                        <p>Your sync request has been received, and will be completed as soon as possible!</p>
+                        <p>
+                            We will notify you when your sync request has been completed, or if there's been any issues.<br>
+                            You can also keep track of the progress of any pending sync request by visiting <a href="/AccountIntegration/SyncHistory">Sync History</a>.
+                        </p>
+                        <p>Until then, please feel free to continue using the system as normal.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" data-dismiss="modal" class="jl-button-green">
+                    <i class="mdi mdi-checkbox-marked"></i>
+                    <span>OK</span>
+                </button>
+            </div>
+        </div>
+
+    </section>
+    <div id="axaChat"><div class="chatbox-holder"></div></div>
+
+    <script type="text/javascript">
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-26590659-11', 'auto');
+        ga('send', 'pageview', {
+            'dimension1': '1f16f7e3-a41e-487e-99c1-d67e8296b658',
+            'dimension2': 'e3d50c40-1766-4440-8361-e84f59fcdf34',
+            'dimension3': '1',
+            'dimension5': 'Trialing',
+            'dimension6': '-',
+            'dimension7': '15/04/2022 23:59:59'
+        });
+
+        if (false)
+        {
+            ga('set', 'userId', '');
+        }
+        var googleAnalyticsRender = true;
+    </script>
+
+
+    <script type="text/javascript">
+        window.intercomSettings = {
+            app_id: 'vtcsbf75',
+            
+            name: 'Thuong',
+            email: 'thuongl@joblogic.com',
+            subscription_status: 'Trialing',
+            subscription_end_date: '15/04/2022',
+            referral_campaign: '',
+            'Contact Status': 'Primary',
+            company: {
+                id: '1f16f7e3-a41e-487e-99c1-d67e8296b658',
+                name: 'Thuong Corp'
+            }
+            
+        };
+    </script>
+    <script type="text/javascript">
+        (function () {
+            var w = window; var ic = w.Intercom; if (typeof ic === "function") { ic('reattach_activator'); ic('update', intercomSettings); } else {
+                var d = document; var i = function () { i.c(arguments) }; i.q = []; i.c = function (args) { i.q.push(args) }; w.Intercom = i; function l() {
+                    var s = d.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = 'https://widget.intercom.io/widget/vtcsbf75'; var x = d.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+                } if (w.attachEvent) { w.attachEvent('onload', l); } else { w.addEventListener('load', l, false); }
+            }
+        })()
+    </script>
+
+    <script type="text/javascript">
+        var trackcmp_email = '';
+            
+        trackcmp_email = 'thuongl@joblogic.com';
+        
+        var trackcmp = document.createElement("script");
+        trackcmp.async = true;
+        trackcmp.type = 'text/javascript';
+        trackcmp.src = '//trackcmp.net/visit?actid=475383677&e=' + encodeURIComponent(trackcmp_email) + '&r=' + encodeURIComponent(document.referrer) + '&u=' + encodeURIComponent(window.location.href);
+        var trackcmp_s = document.getElementsByTagName("script");
+        if (trackcmp_s.length) {
+            trackcmp_s[0].parentNode.appendChild(trackcmp);
+        } else {
+            var trackcmp_h = document.getElementsByTagName("head");
+            trackcmp_h.length && trackcmp_h[0].appendChild(trackcmp);
+        }
+    </script>
+
+
+
+
+
+    <script type="text/javascript" data-cfasync="false">
+        (function (W, i, s, e, P, o, p) {
+            W['WisePopsObject'] = P; W[P] = W[P] || function () {
+                (W[P].q = W[P].q || []).push(arguments)
+            }, W[P].l = 1 * new Date(); o = i.createElement(s),
+                p = i.getElementsByTagName(s)[0]; o.async = 1; o.src = e; p.parentNode.insertBefore(o, p)
+        })(window, document, 'script', '//loader.wisepops.com/get-loader.js?v=1&site=zdAqAc9Jkx', 'wisepops');
+
+        wisepops("properties", {
+            SubscriptionStatus: 'Trialing',
+            SubscriptionEndDate: '2022-04-15',
+            Industry: 'Air Conditioning & Refrigeration',
+            CompanySize: 'Just me',
+            ActivationType: 'None',
+            JoblogicMode: 'Advanced',
+            DemoStatus: '-',
+            TypeOfCustomer: 'Both'
+        });
+    </script>
+
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-WR9ZV3D');
+    </script>
+    <!-- End Google Tag Manager -->
+
+
+    
+    <script src="/bundles/restoreBootstrapTab?v=0VNyJLLpJXeGjjkg-pixNNKHJoS0GFgKd8BEu2vF7Lg1"></script>
+
+    <script src="/Scripts/joblogic/twiliochat/contractor.js"></script>
+    
+    <script type="text/javascript">
+        new Vue({
+            el: '#ieErrorMsg',
+            data: {
+                showIEMessage: false
+            },
+            mounted: function () {
+                var ua = window.navigator.userAgent;
+                var msie = ua.indexOf("MSIE ");
+                if (msie > 0 || !!navigator.userAgent.match(/Trident.*rv\:11\./)) {
+                    this.showIEMessage = true;
+                }
+
+            }
+        });
+        $(document).on("keypress", ".disableEnter", function (event) {
+            if (event.keyCode == 13) {
+                event.preventDefault();
+            }
+        });
+
+        var globalResultTableSettings = {};
+    </script>
+
+    <!-- Inline Manual embed code -->
+    <script>
+        if (!$('#InitialSetupsId').length) {
+            !function () { var e = document.createElement("script"), t = document.getElementsByTagName("script")[0]; e.async = 1, e.src = "https://inlinemanual.com/embed/player.9a2436813ae65f80c888da3ea845e853.js", e.charset = "UTF-8", t.parentNode.insertBefore(e, t) }();
+        }
+    </script>
+
+    <script>
+        function createBackButton(url, text) {
+            var backButton = $('<a href="' + url + '" class="jl-button-blue" id="backToExploreJoblogic"><i class="mdi mdi-arrow-left mdi-24px"></i><span>' + text + '</span></a>');
+            backButton.appendTo('body');
+            $('.jl-content-wrap').css({ 'padding-bottom': '70px' });
+        }
+            </script>
+
+    <script src="/bundles/customJqueryValidator?v=CL8kF2EjwDL-uWXXyju0JV-DnxKmY0NSPgu2tFEj2Xw1"></script>
+
+
+<iframe frameborder="0" allowtransparency="true" scrolling="no" name="__privateStripeMetricsController4870" allowpaymentrequest="true" src="https://js.stripe.com/v3/m-outer-6e6ed81584679d263bf5a2b0f15af9e1.html#url=https%3A%2F%2Fgo.joblogic.com%2F&amp;title=Dashboard%20-%20JobLogic&amp;referrer=https%3A%2F%2Fgo.joblogic.com%2FAccount%2FLogOn&amp;muid=NA&amp;sid=NA&amp;version=6&amp;preview=false" aria-hidden="true" tabindex="-1" style="border: none !important; margin: 0px !important; padding: 0px !important; width: 1px !important; min-width: 100% !important; overflow: hidden !important; display: block !important; visibility: hidden !important; position: fixed !important; height: 1px !important; pointer-events: none !important; user-select: none !important;"></iframe>
+<script type="text/javascript" id="">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","429723161127353");fbq("set","agent","tmgoogletagmanager","429723161127353");fbq("track","PageView");</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=429723161127353&amp;ev=PageView&amp;noscript=1"></noscript>
+</body></html>

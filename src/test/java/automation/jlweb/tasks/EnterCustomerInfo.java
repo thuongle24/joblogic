@@ -1,5 +1,7 @@
 package automation.jlweb.tasks;
 
+import automation.jlweb.actions.EnterPhoneNumber;
+import automation.jlweb.actions.SelectPhoneCountry;
 import automation.jlweb.model.TelephoneType;
 import automation.jlweb.ui.AddCustomerPage;
 import net.serenitybdd.screenplay.Actor;
@@ -57,7 +59,10 @@ public class EnterCustomerInfo implements Task {
         if (postCode!=null)
             actor.attemptsTo(Enter.keyValues(postCode).into(AddCustomerPage.ZIPCODETXT));
         if (telephoneNumber!=null)
-            actor.attemptsTo(EnterPhoneNumber.with(telephoneNumber,AddCustomerPage.TELEPHONETXT,AddCustomerPage.CUSTOMERTELEPHONECOUNTRYBTN, telephoneCountry, TelephoneType.TELEPHONE));
+            actor.attemptsTo(
+                            SelectPhoneCountry.on(AddCustomerPage.CUSTOMERTELEPHONECOUNTRYBTN).forType(TelephoneType.TELEPHONE).withValue(telephoneCountry),
+                            EnterPhoneNumber.on(AddCustomerPage.TELEPHONETXT).withValue(telephoneNumber)
+                            );
         if (customerType!=null)
             actor.attemptsTo(Enter.keyValues(customerType).into(AddCustomerPage.CUSTOMERTYPETXT).thenHit(Keys.TAB));
         if(referenceNumber!=null)

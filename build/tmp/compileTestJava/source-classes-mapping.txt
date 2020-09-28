@@ -1,46 +1,48 @@
 automation/jlweb/ui/SearchBox.java
  automation.jlweb.ui.SearchBox
+automation/jlweb/model/SubCategory.java
+ automation.jlweb.model.SubCategory
+automation/jlweb/model/JLFeature.java
+ automation.jlweb.model.JLFeature
+automation/jlweb/ui/CustomerPage.java
+ automation.jlweb.ui.CustomerPage
+automation/jlweb/ui/NavigationBar.java
+ automation.jlweb.ui.NavigationBar
+automation/jlweb/tasks/EnterCustomerInfo.java
+ automation.jlweb.tasks.EnterCustomerInfo
+automation/jlweb/tasks/EnterContactInfo.java
+ automation.jlweb.tasks.EnterContactInfo
+automation/jlweb/tasks/LoginJLWeb.java
+ automation.jlweb.tasks.LoginJLWeb
+automation/jlweb/tasks/EnterPhoneNumber.java
+ automation.jlweb.tasks.EnterPhoneNumber
+automation/jlweb/ui/GoogleSearchPage.java
+ automation.jlweb.ui.GoogleSearchPage
+automation/jlweb/tasks/SelectTab.java
+ automation.jlweb.tasks.SelectTab
 automation/jlweb/features/search/package-info.java
  automation.jlweb.features.search.package-info
 automation/jlweb/tasks/NavigateToSubCategory.java
- automation.jlweb.tasks.NavigateToSubCategory
-automation/jlweb/model/SubCategory.java
- automation.jlweb.model.SubCategory
 automation/jlweb/tasks/OpenTheApplication.java
  automation.jlweb.tasks.OpenTheApplication
 automation/jlweb/ui/HomePage.java
  automation.jlweb.ui.HomePage
 automation/jlweb/tasks/AddTags.java
  automation.jlweb.tasks.AddTags
+automation/jlweb/tasks/SelectButton.java
+ automation.jlweb.tasks.SelectButton
 automation/jlweb/tasks/NavigateToCategory.java
- automation.jlweb.tasks.NavigateToCategory
 automation/jlweb/model/Category.java
  automation.jlweb.model.Category
 automation/jlweb/model/TelephoneType.java
  automation.jlweb.model.TelephoneType
-automation/jlweb/tasks/EnterPhoneNumber.java
- automation.jlweb.tasks.EnterPhoneNumber
-automation/jlweb/ui/GoogleSearchPage.java
- automation.jlweb.ui.GoogleSearchPage
+automation/jlweb/ui/AddCustomerPage.java
+ automation.jlweb.ui.AddCustomerPage
+automation/jlweb/features/customers/CreateCustomer.java
+ automation.jlweb.features.customers.CreateCustomer
 automation/jlweb/features/search/LoginWithValidCredentials.java
  automation.jlweb.features.search.LoginWithValidCredentials
-automation/jlweb/ui/NavigationBar.java
- automation.jlweb.ui.NavigationBar
-automation/jlweb/tasks/LoginJLWeb.java
- automation.jlweb.tasks.LoginJLWeb
-automation/jlweb/features/search/SearchByKeywordStory.java
- automation.jlweb.features.search.SearchByKeywordStory
 automation/jlweb/tasks/Search.java
  automation.jlweb.tasks.Search
 automation/jlweb/ui/LoginPage.java
  automation.jlweb.ui.LoginPage
-automation/jlweb/ui/AddCustomerPage.java
- automation.jlweb.ui.AddCustomerPage
-automation/jlweb/tasks/EnterCustomerInfo.java
- automation.jlweb.tasks.EnterCustomerInfo
-automation/jlweb/features/customers/CreateCustomer.java
- automation.jlweb.features.customers.CreateCustomer
-automation/jlweb/tasks/EnterContactInfo.java
- automation.jlweb.tasks.EnterContactInfo
-automation/jlweb/tasks/SelectButton.java
- automation.jlweb.tasks.SelectButton
