@@ -1,11 +1,21 @@
 package automation.jlweb.actions;
 
+<<<<<<< HEAD
+=======
+import net.serenitybdd.core.SerenitySystemProperties;
+>>>>>>> bc232fd7848950f68167379320271268a17b3078
 import net.serenitybdd.core.environment.EnvironmentSpecificConfiguration;
 import net.serenitybdd.core.pages.PageObject;
 import net.serenitybdd.core.pages.WebElementFacade;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
+<<<<<<< HEAD
 import net.thucydides.core.util.EnvironmentVariables;
+=======
+import net.thucydides.core.ThucydidesSystemProperty;
+import net.thucydides.core.util.EnvironmentVariables;
+import org.omg.CORBA.Environment;
+>>>>>>> bc232fd7848950f68167379320271268a17b3078
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
@@ -17,11 +27,19 @@ public class WaitAndClick extends PageObject implements Task {
 
     private By by;
     private WebElementFacade element;
+<<<<<<< HEAD
     EnvironmentVariables environmentVariables;
     private int timeout = Integer.parseInt(EnvironmentSpecificConfiguration.from(environmentVariables).getProperty("webdriver.timeouts.implicitlywait")); //seconds
     private int interval = 3; // Integer.parseInt(SerenitySystemProperties.getProperties().getValue(ThucydidesSystemProperty.WEBDRIVER_TIMEOUTS_FLUENTWAIT)); //seconds
     //private int timeout = 15;
     //private int interval = 3;
+=======
+    //EnvironmentVariables environmentVariables;
+   // private int timeout = Integer.parseInt(EnvironmentSpecificConfiguration.from(environmentVariables).getProperty("webdriver.timeouts.implicitlywait")); //seconds
+    //private int interval = 3; // Integer.parseInt(SerenitySystemProperties.getProperties().getValue(ThucydidesSystemProperty.WEBDRIVER_TIMEOUTS_FLUENTWAIT)); //seconds
+    private int timeout = 15;
+    private int interval = 3;
+>>>>>>> bc232fd7848950f68167379320271268a17b3078
 
     public WaitAndClick(By by) {
         this.by = by;

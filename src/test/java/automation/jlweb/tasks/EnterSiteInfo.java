@@ -7,7 +7,10 @@ import net.serenitybdd.screenplay.Performable;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Settable;
 import net.thucydides.core.annotations.Step;
+<<<<<<< HEAD
 
+=======
+>>>>>>> bc232fd7848950f68167379320271268a17b3078
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 
 public class EnterSiteInfo implements Performable {

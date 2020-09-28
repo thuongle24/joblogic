@@ -3,9 +3,14 @@ package automation.jlweb.features.sites;
 import automation.jlweb.actions.NavigateToPage;
 import automation.jlweb.model.Category;
 import automation.jlweb.model.SubCategory;
+<<<<<<< HEAD
 import automation.jlweb.tasks.EnterSiteInfo;
 import automation.jlweb.tasks.LoginJLWeb;
 import automation.jlweb.tasks.OpenTheApplication;
+=======
+import automation.jlweb.tasks.*;
+
+>>>>>>> bc232fd7848950f68167379320271268a17b3078
 import net.serenitybdd.junit.runners.SerenityRunner;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
@@ -17,6 +22,10 @@ import org.junit.runner.RunWith;
 import org.openqa.selenium.WebDriver;
 
 import static net.serenitybdd.screenplay.GivenWhenThen.*;
+<<<<<<< HEAD
+=======
+import static net.serenitybdd.screenplay.GivenWhenThen.and;
+>>>>>>> bc232fd7848950f68167379320271268a17b3078
 
 @RunWith(SerenityRunner.class)
 public class CreateSite {
